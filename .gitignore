@@ -1,0 +1,75 @@
+# KiCad 10 .gitignore
+# Format documentation: https://docs.kicad.org/10.0/en/kicad/kicad.html
+
+# --- KiCad Temporary, Lock, and Autosave Files ---
+*.000
+*.bak
+*.bck
+*-bak
+*-bak*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+~*
+~*.lck
+_autosave-*
+\#auto_saved_files\#
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+
+out/*
+
+# --- KiCad Caches & Local Settings ---
+# Local project settings (window positions, last opened sheets, layer visibility)
+*.kicad_prl
+# Footprint library info cache
+fp-info-cache
+*-cache*
+
+# --- Backups & Local History ---
+# Archived project backups (KiCad 6.0+)
+*-backups/
+**/*-backups/*.zip
+# Local git-based history folder (KiCad 9.0+)
+.history/
+
+# --- Generated Intermediate & Export Files ---
+# Netlist files (exported from Schematic Editor)
+*.net
+# Autorouter files (exported from PCB Editor)
+*.dsn
+*.ses
+# Simulation & Spice temporary files
+*.wbk
+
+# --- Exported BOMs (uncomment if you don't want to track BOM exports) ---
+*.xml
+*.csv
+
+# --- Manufacturing / Fabrication Outputs (Optional) ---
+# Uncomment these if you generate Gerbers/drill/pos files locally and don't track them in Git
+gerbers/
+production/
+jlcpcb/
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+*-pos.csv
+*-bom.csv
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.gm1
+*.gko
+
+
+.DS_Store
+Thumbs.db
+desktop.ini
